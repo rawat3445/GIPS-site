@@ -1,29 +1,88 @@
+// app/about/page.js
 export default function AboutPage() {
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="max-w-5xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-gray-800 mb-6">About Us</h1>
+    <main className="max-w-6xl mx-auto px-6 py-12">
+      <h1 className="text-3xl font-bold text-blue-700 mb-6">About GIPS</h1>
+      <p className="text-gray-700 leading-relaxed mb-8">
+        Garhwal Institute of Paramedical Sciences (GIPS) is a premier institution 
+        dedicated to excellence in paramedical education and healthcare training. 
+        Since its establishment, GIPS has been committed to nurturing skilled 
+        healthcare professionals who combine academic excellence with a human touch.
+      </p>
 
-        <p className="text-gray-700 mb-4">
-          Welcome to Garhwal Institute of Paramedical Sciences (GIPS) — an esteemed institution run by Shri Satchandi Jankalyan Samiti, dedicated to excellence in paramedical education and healthcare training.
-        </p>
+      <div className="grid md:grid-cols-2 gap-8">
+        {/* About GIPS */}
+        <div className="p-6 bg-gray-50 rounded-xl shadow">
+          <h2 className="text-xl font-semibold mb-2">About GIPS</h2>
+          <p className="text-gray-600 mb-3">
+            Learn about our history, growth, and unique approach to paramedical education.
+          </p>
+          <a href="/about/gips" className="text-blue-600 hover:underline">Read More →</a>
+        </div>
 
-        <p className="text-gray-700 mb-4">
-          Since our establishment in 2010, we have been committed to nurturing skilled, compassionate, and knowledgeable healthcare professionals who play a vital role in the medical field.
-        </p>
+        {/* Vision & Mission */}
+        <div className="p-6 bg-gray-50 rounded-xl shadow">
+          <h2 className="text-xl font-semibold mb-2">Vision & Mission</h2>
+          <p className="text-gray-600 mb-3">
+            Discover our guiding principles and the mission that drives us forward.
+          </p>
+          <a href="/about/vision-mission" className="text-blue-600 hover:underline">Read More →</a>
+        </div>
 
-        <p className="text-gray-700 mb-4">
-          At GIPS, we offer a wide range of paramedical programs that combine strong theoretical foundations with extensive hands-on training. Our industry-aligned curriculum ensures that students are fully prepared for successful careers in hospitals, clinics, diagnostic centers, and other healthcare settings.
-        </p>
+        {/* Accreditation */}
+        <div className="p-6 bg-gray-50 rounded-xl shadow">
+          <h2 className="text-xl font-semibold mb-2">Accreditations</h2>
+          <p className="text-gray-600 mb-3">
+            Approved and recognized by national councils with top rankings.
+          </p>
+          <a href="/about/accreditation" className="text-blue-600 hover:underline">Read More →</a>
+        </div>
 
-        <p className="text-gray-700 mb-4">
-          We pride ourselves on our state-of-the-art infrastructure, which includes modern laboratories, well-equipped classrooms, and a team of experienced faculty members who are experts in their respective fields. With a strong focus on practical training, internships, and industry exposure, we aim to bridge the gap between education and professional excellence.
-        </p>
+        {/* Awards */}
+        <div className="p-6 bg-gray-50 rounded-xl shadow">
+          <h2 className="text-xl font-semibold mb-2">Awards & Achievements</h2>
+          <p className="text-gray-600 mb-3">
+            Celebrating excellence through institutional, faculty, and student awards.
+          </p>
+          <a href="/about/awards" className="text-blue-600 hover:underline">Read More →</a>
+        </div>
 
-        <p className="text-gray-700">
-          By choosing GIPS, you are taking the first step towards a fulfilling and impactful career in healthcare. Join us in our mission to empower society through quality paramedical education and contribute to the growth of the healthcare sector.
-        </p>
+        {/* ISR */}
+        <div className="p-6 bg-gray-50 rounded-xl shadow">
+          <h2 className="text-xl font-semibold mb-2">Social Responsibilities</h2>
+          <p className="text-gray-600 mb-3">
+            Contributing to society with community health, awareness, and outreach programs.
+          </p>
+          <a href="/about/social-responsibilities" className="text-blue-600 hover:underline">Read More →</a>
+        </div>
+
+        {/* Departments */}
+        <div className="p-6 bg-gray-50 rounded-xl shadow">
+          <h2 className="text-xl font-semibold mb-2">Departments</h2>
+          <p className="text-gray-600 mb-3">
+            Explore our diverse academic departments and world-class facilities.
+          </p>
+          <a href="/about/departments" className="text-blue-600 hover:underline">Read More →</a>
+        </div>
+
+        {/* Student Services */}
+        <div className="p-6 bg-gray-50 rounded-xl shadow">
+          <h2 className="text-xl font-semibold mb-2">Student Services</h2>
+          <p className="text-gray-600 mb-3">
+            Supporting students with mentoring, counseling, and career guidance.
+          </p>
+          <a href="/about/student-services" className="text-blue-600 hover:underline">Read More →</a>
+        </div>
+
+        {/* Location */}
+        <div className="p-6 bg-gray-50 rounded-xl shadow">
+          <h2 className="text-xl font-semibold mb-2">How to Reach Us</h2>
+          <p className="text-gray-600 mb-3">
+            Get directions to our campus and contact details for easy reach.
+          </p>
+          <a href="/about/location" className="text-blue-600 hover:underline">Read More →</a>
+        </div>
       </div>
-    </section>
+    </main>
   );
 }
