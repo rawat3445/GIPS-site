@@ -42,6 +42,7 @@ export default function Nav() {
         { name: "BMRIT", href: "/programs/bmrit" },
         { name: "BOTT", href: "/programs/bott" },
         { name: "B.Sc. in Optometry", href: "/programs/optometry" },
+        { name: "Diploma in Optometry", href: "/programs/diploma-optometry" },
       ],
     },
     {
@@ -153,29 +154,27 @@ export default function Nav() {
       </div>
 
       <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-20 items-center">
-            {/* Logo - Positioned in corner left with more space */}
-            <div className="flex items-center mr-8">
-              <a href="/" className="flex items-center space-x-3">
+        <div className=" mx-auto   ">
+          <div className="flex justify-between items-center h-24">
+            {/* --- Logo + GIPS (Left) --- */}
+            <a href="/" className="flex flex-col items-center">
+              <div className="flex items-center space-x-3">
                 <img
                   src="/logo-paramedicalfinal-e1717133101289.png"
                   alt="GIPS Logo"
-                  width="60"
-                  height="60"
-                  className="rounded-full"
+                  width="40"
+                  height="40"
+                  className="rounded-full object-cover"
                 />
-                <div>
-                  <span className="text-xl font-bold text-blue-700">GIPS</span>
-                  <p className="text-xs text-gray-600">
-                    Garhwal Institute of Paramedical Sciences
-                  </p>
-                </div>
-              </a>
-            </div>
+                <span className="text-2xl font-bold text-blue-700">GIPS</span>
+              </div>
+              <p className="text-lg font-medium text-gray-700 mt-1 whitespace-nowrap text-center">
+                Garhwal Institute of Paramedical Sciences
+              </p>
+            </a>
 
-            {/* Desktop Menu */}
-            <div className="hidden lg:flex items-center space-x-1">
+            {/* --- Desktop Menu (Right, full width) --- */}
+            <div className="hidden lg:flex items-center flex-grow justify-end space-x-4">
               {menuItems.map((item, index) => (
                 <div key={index} className="relative group">
                   {item.dropdown ? (
@@ -188,7 +187,6 @@ export default function Nav() {
                         {item.name}
                         <ChevronDown className="ml-1 w-4 h-4" />
                       </button>
-
                       {activeDropdown === index && (
                         <div
                           className="absolute top-full left-0 mt-1 w-64 bg-white rounded-md shadow-lg border border-gray-200 py-2 z-50"
@@ -221,13 +219,13 @@ export default function Nav() {
               {/* Apply Now Button */}
               <a
                 href="/apply-now"
-                className="ml-4 px-4 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-md transition-colors"
+                className="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-md transition-colors"
               >
                 Apply Now
               </a>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* --- Mobile Menu Button --- */}
             <button
               className="lg:hidden p-2 text-gray-700 hover:text-blue-700 focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
@@ -241,7 +239,7 @@ export default function Nav() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* --- Mobile Menu --- */}
         {isOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200 max-h-96 overflow-y-auto">
             <div className="px-4 py-3 space-y-1">
@@ -287,7 +285,6 @@ export default function Nav() {
                 </div>
               ))}
 
-              {/* Mobile Apply Now Button */}
               <a
                 href="/apply-now"
                 className="block w-full mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-center text-sm font-medium rounded-md transition-colors"
