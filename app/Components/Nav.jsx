@@ -50,12 +50,15 @@ export default function Nav() {
       href: "/admissions",
       hoverColor: "hover:text-orange-700 hover:bg-orange-100",
       dropdown: [
-        { name: "After 12th", href: "/admissions/after-12th" },
+        { name: "After 12th", href: "/admissions/after12th" },
         { name: "How to Apply", href: "/admissions/how-to-apply" },
         { name: "Scholarships", href: "/admissions/scholarships" },
         { name: "Fee Payment", href: "/admissions/fee-payment" },
-        { name: "Fee Refund & Cancellation", href: "/admissions/fee-refund" },
-        { name: "Admission Offices", href: "/admissions/offices" },
+        {
+          name: "Fee Refund & Cancellation",
+          href: "/admissions/fee-refund-cancellation",
+        },
+        { name: "Admission Offices", href: "/admissions/admission-offices" },
         { name: "Education Loan", href: "/admissions/education-loan" },
       ],
     },

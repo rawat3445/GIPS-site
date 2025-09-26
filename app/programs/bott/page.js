@@ -43,7 +43,7 @@ export default function BottPage() {
             <BookOpen className="w-8 h-8 text-blue-600 mx-auto mb-3" />
             <h3 className="font-semibold text-gray-800">Eligibility</h3>
             <p className="text-lg font-bold text-blue-600">10+2</p>
-            <p className="text-sm text-gray-600">PCB/PCM Stream</p>
+            <p className="text-sm text-gray-600">PCB Stream</p>
           </div>
           <div className="bg-white p-6 rounded-xl shadow-lg text-center">
             <Award className="w-8 h-8 text-green-600 mx-auto mb-3" />
@@ -55,7 +55,9 @@ export default function BottPage() {
             <Shield className="w-8 h-8 text-red-600 mx-auto mb-3" />
             <h3 className="font-semibold text-gray-800">Focus</h3>
             <p className="text-lg font-bold text-red-600">Surgical</p>
-            <p className="text-sm text-gray-600">Technology</p>
+            <p className="text-lg font-bold text-gray-600">&</p>
+            <p className="text-sm text-gray-600">Anesthesia,</p>
+            <p className="text-sm text-gray-600">Technologist</p>
           </div>
         </div>
 
